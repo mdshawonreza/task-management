@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useContext, useEffect, useState } from "react";
+import { FcParallelTasks } from "react-icons/fc";
 
 
 const Navbar = () => {
@@ -54,15 +55,16 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="flex items-center gap-2 pl-4">
-                    {/* <div>
-                        {
+                <div className="flex items-center gap-3 pl-4">
+                    <div className="text-5xl">
+                        {/* {
                             theme == "light" && <img className="w-[60px] md:w-[100px]  " src={logo} alt="" />
                         }
                         {
                             theme == "dark" && <img className="w-[60px] md:w-[100px]  " src={logo} alt="" />
-                        }
-                    </div> */}
+                        } */}
+                        <FcParallelTasks></FcParallelTasks>
+                    </div>
 
                     <div>
                         <h2 className="text-2xl text-teal-600 font-bold"> Task Management</h2>
